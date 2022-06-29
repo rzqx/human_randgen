@@ -40,7 +40,7 @@ class HumanRng:
         self.a = 1 
         self.b = var * (self.a + 1.5)
 
-    def rand(self, n = 1):
+    def rand(self, num_samples = 1):
         mean, sigma = self.__map()
         if n == 1:
             return self.rng.lognormal(mean, sigma)
