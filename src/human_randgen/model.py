@@ -48,6 +48,9 @@ class HumanRng:
             return self.rng.lognormal(mean, sigma, n)
 
     def fit(self, xs):
+        if not xs:
+            return
+
         data = np.log(np.array(xs))
         self.__update_posterior(data)
 
