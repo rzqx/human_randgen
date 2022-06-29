@@ -2,6 +2,10 @@
 
 This is a simple package which makes it easy to generate random numbers with a distribution following human response times. It is possible to fine-tune the generator with existing data (e.g., time between mouse clicks).
 
+## Installation
+
+```pip install human_randgen```
+
 ## Usage
 
 Initialize the generator with your choice of mode and standard deviation. These parameters depend on your use case. For example, if you are simulating a person clicking a mouse every 2 +- 1 seconds, you could try:
