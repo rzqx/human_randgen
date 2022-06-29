@@ -31,4 +31,4 @@ The `fit` function can be called as many times as you want. The more data you pa
 ## Internals
 The underlying distribution is lognormal, which is said to represent many human behaviors. During initialization, Newton's method is used to calculate the mean and variance of the lognormal distribution from the given parameters.
 
-For fitting, we add a normal-inverse-gamma distribution as the conjugate prior on the parameters and perform MAP.
+For fitting, we add a normal-inverse-gamma distribution as the conjugate prior on the parameters and perform MAP estimation.
