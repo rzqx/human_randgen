@@ -35,6 +35,13 @@ class TestHumanRng(unittest.TestCase):
         self.assertTrue(np.abs(u - mu) < 0.1)
         self.assertTrue(np.abs(s - sigma) < 0.1)
 
+    def test_generation(self):
+        """Generation sanity check"""
+        rng = HumanRng(mode=1, sigma=0.1)
+        self.assertTrue(rng.rand() < 10)
+        self.assertEqual(len(rng.rand(10)), 10)
+
+
 if __name__ == '__main__':
     unittest.main()
 

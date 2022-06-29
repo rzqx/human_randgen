@@ -42,13 +42,13 @@ class HumanRng:
 
     def rand(self, num_samples = 1):
         mean, sigma = self.__map()
-        if n == 1:
+        if num_samples == 1:
             return self.rng.lognormal(mean, sigma)
         else:
-            return self.rng.lognormal(mean, sigma, n)
+            return self.rng.lognormal(mean, sigma, num_samples)
 
     def fit(self, xs):
-        if not xs:
+        if len(xs) == 0:
             return
 
         data = np.log(np.array(xs))
