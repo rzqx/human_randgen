@@ -1,6 +1,6 @@
 # Human Random Generator
 
-This is a simple package which makes it easy to generate random numbers representing human response times. It is possible to fine-tune the generator with existing data (e.g., time between mouse clicks).
+This is a simple package which makes it easy to generate random numbers with a distribution following human response times. It is possible to fine-tune the generator with existing data (e.g., time between mouse clicks).
 
 ## Usage
 
